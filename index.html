@@ -2,6 +2,7 @@
 	<head>
 		<title>HTML File for Students' Test</title>
 		<link rel="stylesheet" href="assets/css/styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="assets/javascript/task1.js"></script>
 		<script src="assets/javascript/task2.js"></script>
 		<script src="assets/javascript/task3.js"></script>
@@ -12,7 +13,7 @@
 	<body>
 		<div class="header">
 			<div class="container">
-				<h1 class="header-heading">Put Student Names Here</h1>
+				<h1 class="header-heading">Chris</h1>
 			</div>
 		</div>
 		<div class="nav-bar">
@@ -25,7 +26,8 @@
 					<li><a href="#">Nav Link 5</a></li>
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
-					<!-- Button for Task 3 should be placed here -->
+					<button type = "button" id = "task3"> Task 3 </button>
+					<button type = "button" id = "task5">Clear</button>
 
 				</ul>
 			</div>
@@ -38,7 +40,7 @@
 
 					<!-- Paragraphs -->
 					<h3>Basic Directions</h3>
-					<p>This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
+					<p id = "this">This project is meant to assess your understanding of Javascript usage within a webpage.  There are five tasks that you must complete.  The tasks are functionality that will be added to this page.  Inside of the folder you found this html file, you will see a folder called "assets".  Within that, another folder called "javascript" has 5 files labeled task1.js to task5.js.  For each task, place your javascript code within the appropriate file.  The files are already linked to this page in the <b>head</b> of this document.  The instructions for each task are listed below.</p>
 					<hr>
 
 					<h3>Tasks</h3>
@@ -62,15 +64,17 @@
 					<hr>
 
 					<h3>Task 1 - The Image</h3>
-					<img src="assets/img/compIcon.png" id="imageTask1"><br />
+					<img src="assets/img/compIcon.png" id="imageTask1" style = "visibility:visible"><br />
 					<button style="display:none" id="buttonTask1">Click Me</button>
 					<hr>
 
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
+					<button type = "button" id = "buttonTask21">Red</button>
+					<button type = "button" id = "buttonTask22">Yellow</button>
+					<button type = "button" id = "buttonTask23">Green</button>
 
-
-					<table class="table table-striped">
+					<table class="table table-striped" id = "tableTask2">
 						<thead>
 							<tr>
 								<th>#</th>
