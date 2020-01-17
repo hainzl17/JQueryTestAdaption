@@ -5,6 +5,6 @@ $(document).ready(function(){
     $("#buttonTask1").css("display", "block");
   });
   $("#buttonTask1").click(function(){
-    $("#imageTask1").css("visibility", "hidden");
+    $("#imageTask1").hide();
   });
 });
