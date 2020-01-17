@@ -4,10 +4,18 @@ $(document).ready(function(){
   var address = $("#address").val();
   var phone = $("#phone").val();
   var email = $("email").val();
-  if (fullName === 0 && address == 0 && phone == 0 && email === 0){
-    alert ("You need to fill in all of the forms.";)
+  $("#button4").click(function(){
+  if (fullName === 0){
+    alert ("You need to fill in all of the forms correctly.");
   };
-  if (phone < 10){
-    alert ("Not a valid phone number")
-  }
+  if (address === 0){
+    alert ("You need to fill in all of the forms correctly.");
+  };
+  if (email === 0){
+    alert ("You need to fill in all of the forms correctly.");
+  };
+  if (phone === 0 || phone < 10){
+    alert ("You need to fill in all of the forms correctly.");
+    };
+  });
 });
